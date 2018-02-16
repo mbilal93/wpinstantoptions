@@ -1,0 +1,331 @@
+$prefix: '.appearance_page_theme-options.allinoneAdmin';
+
+@mixin transition() {
+  -webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-ms-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;
+}
+#{$prefix } {
+  .text-left {text-align: left;}
+  .text-right {text-align: right;}
+  .text-center {text-align: center;}
+
+  .fl {float: left;}
+  .fr {float: right;}
+  /**********Blocks***********/
+  .block1 {width: 8.3%;}
+  .block2 {width: 16.6%;}
+  .block3 {width: 25%;}
+  .block4 {width: 33.2%;}
+  .block5 {width: 41.5%;}
+  .block55 {width: 48.8%;}
+  .block6 {width: 49.8%;}
+  .block7 {width: 58.1%;}
+  .block8 {width: 66.4%;}
+  .block9 {width: 75.1%;}
+  .block10 {width: 83%;}
+  .block11 {width: 91.3%;}
+  .block12 {width: 100%;}
+
+  /**********************/
+  /**********Font Sizes************/
+
+  .f14 {font-size: 14px;}
+  .f15 {font-size: 15px;}
+  .f16 {font-size: 16px;}
+  .f17 {font-size: 17px;}
+  .f18 {font-size: 18px;}
+  .f19 {font-size: 19px;}
+  .f21 {font-size: 21px;}
+  .f20 {font-size: 20px;}
+  .f22 {font-size: 22px;}
+  .f23 {font-size: 23px;}
+  .f25 {font-size: 25px;}
+  .f26 {font-size: 26px;}
+  .f27 {font-size: 27px;}
+  .f28 {font-size: 28px;}
+  .f29 {font-size: 29px;}
+  .f30 {font-size: 30px;}
+  .f31 {font-size: 31px;}
+  .f32 {font-size: 32px;}
+  .f33 {font-size: 33px;}
+  .f34 {font-size: 34px;}
+  .f35 {font-size: 35px;}
+  .f36 {font-size: 36px;}
+  .f37 {font-size: 37px;}
+  .f100 {font-size: 100px;}
+  .f110 {font-size: 110px;}
+
+  /**********Spaces***********/
+  .space05 {padding-top: 0.5em;}
+  .space1 {padding-top: 1em;}
+  .space2 {padding-top: 2em;}
+  .space3 {padding-top: 3em;}
+  .space4 {padding-top: 4em;}
+  .space5 {padding-top: 5em;}
+  .space6 {padding-top: 6em;}
+  .space7 {padding-top: 7em;}
+  .space8 {padding-top: 8em;}
+  .space9 {padding-top: 9em;}
+  .space10 {padding-top: 10em;}
+
+  .clear {clear: both;}
+
+  &.ui-dialog-open #wpwrap {
+    filter: blur(3px);
+    margin-top: -32px;
+    padding-top: 32px;
+  }
+
+  .theme_panel .title h2 {
+    font-size: 20px;
+    padding-left: 8px;
+  }
+
+  .flexbox {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: flex;
+  }
+  h2.title {
+    font-weight: 200;
+    font-size: 48px;
+  }
+  .grey-bg {background-color: #23282d;}
+
+  .white {color: #fff;}
+  .black {color: #000;}
+
+  .normal[class] {font-weight: normal;}
+  .bold[class] {font-weight: bold;}
+  .semibold[class] {font-weight: 400;}
+
+  .uppercase {text-transform: uppercase;}
+  .underline {text-decoration: underline;}
+  .normalcase {text-transform: none;}
+
+  .overflow-hidden {overflow: hidden; -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);}
+
+  .adminopt {
+    min-height: 100%;
+  }
+  .adminopt .opts {min-height: 85vh;}
+  .adminopt .opts .menu {
+    background-color: #23282d;
+    max-height: 79vh;
+    min-width: 130px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 0;
+    position: relative;
+    width: 12%;
+    z-index: 100;
+  }
+  .adminopt .opts .contents {
+    background-color: #fafafa;
+    max-height: 75vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1em 0 10px;
+    position: relative;
+    width: 88%;
+  }
+  .adminopt .opts .contents table {
+    display: block;
+    float: left; width: 100%;
+  }
+
+  .adminopt .contents table tr {display: none; width: 800px}
+  .adminopt .contents table tr.active {
+    display: block;
+    opacity: 0;
+    animation: fadeLeft 0.2s ease forwards;
+    -webkit-animation: fadeLeft 0.2s ease forwards;
+  }
+  .adminopt #live_preview {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    float: left;
+    height: 100vh;
+    width: 68%;
+    position: relative;
+    overflow: scroll;
+  }
+
+  .adminopt #live_preview .body, .adminopt #live_preview .body * {transition: all 0.1s ease; -webkit-transition: all 0.1s ease;}
+  .adminopt .contents table tr th {
+    background-color: #ddd;
+    padding: 10px 14px;
+    text-align: left;
+    width: 160px;
+  }
+  .adminopt #live_preview .body {position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .adminopt .opts .contents::before {
+    background-color: #23282d;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .opts .menu .title {
+    display: block;
+    font-weight: lighter;
+    padding: 8px 12px;
+    overflow: hidden;
+    cursor: pointer;position: relative;
+  }
+  .opts .menu .title .dashicons-before::before {
+    z-index: 100;
+    color: #fff;
+    position: relative;
+  }
+
+  .opts .menu .title:before {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    left: 0; top: 0;
+    background-color: #32373c;
+    left: -100%;
+  }
+  .opts .menu .title.active:before {background-color: #0073aa;}
+
+  .opts .menu .title h4 {position: relative; z-index: 100;}
+
+  .opts .menu .title:hover::before, .opts .menu .title.active::before {
+    left: 0;
+  }
+  .opts .menu .title:active::before {
+    margin-left: -0.5em;
+    transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+  }
+  .adminopts tr td > div {padding-bottom: 5px;}
+
+  .adminopts tr td h3 {
+    color: #515151;
+    display: block;
+    font-size: 28px;
+    font-weight: lighter;
+    margin: 28px 0 5px;
+    width: 100%;
+  }
+  .adminopts input, .adminopts select, .adminopts textarea {
+    border: 1px solid;
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.5) inset;
+    height: auto;
+    padding: 5px;
+    width: 70%;
+  }
+  /******************Animations****************/
+  @keyframes fadeLeft {
+    from {margin-left: -1em; opacity: 0;}
+    to {margin-left: 0px; opacity: 1;}
+  }
+  @-webkit-keyframes fadeLeft {
+    from {margin-left: -1em; opacity: 0;}
+    to {margin-left: 0px; opacity: 1;}
+  }
+  .ui-widget-overlay {background: #001A27;}
+
+  #optiondialogpanel {
+    overflow:hidden;
+    position: relative;
+    h3 {width: auto; display: inline-block; vertical-align: middle;}
+    i {display: inline-block;
+      vertical-align: middle;
+      margin-right: 2em;
+      font-size: 32px;
+      margin-top: -8px;
+      text-decoration: none;}
+    td > a {
+      display: block;
+      text-align: left;
+      outline:none;
+      padding: 5px;
+      border: 1px solid transparent;
+      @include transition();
+      &:active {
+        transform:scale(0.95);
+      }
+      &:focus {
+        outline:none;
+        box-shadow:none;
+      }
+      &:hover {
+        border-color:inherit;
+      }
+    }
+    .primary-options.submenu_open {
+      filter: blur(2px);
+      transition:filter 0.3s ease;
+      -webkit-transition:filter 0.3s ease;
+    }
+    .sub_options {
+      position: absolute;
+      top: 0;
+      width: 50%;
+      background-color: #fff;
+      height: calc(100% - 26px);
+      box-shadow: 0 0 30px 0;
+      padding: 26px 40px 0;
+      z-index: 1;
+      right:-100%;
+      @include transition();
+      &.open {
+       right:0px;
+      }
+      li {
+        list-style: none;
+        display: none;
+      }
+      li.active {
+        display: block;
+      }
+      &:before {
+        background: #001A27;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        position: absolute;
+        z-index: 0;
+        opacity:0;
+      }
+      &.open:before {
+        opacity: 0.4;
+      }
+      label {
+        color:#0073aa; margin-right: 1em;
+        min-width: 100px;
+      }
+      li div {
+        margin-bottom: 1em;
+      }
+        li div > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .footer {
+        position: absolute;
+        bottom: 1em;
+        right: 2em;
+      }
+    }
+  }
+}
